@@ -296,7 +296,7 @@ async function showWave(){
 async function showPls(){
   loading(T.playlists);
   const r=await api('/api/playlists');
-  $('#main').innerHTML=`<div class="h"><h2></h2><span class="sub">${r.playlists.length}</span></div><div class="pls">`+
+  $('#main').innerHTML=`<div class="h"><h2>${T.playlists}</h2><span class="sub">${r.playlists.length}</span></div><div class="pls">`+
     r.playlists.map(p=>`<button class="pl" data-kind="${p.kind}" data-name="${esc(p.name)}"><div class="ph" style="${p.cover?`background-image:url('${esc(p.cover)}')`:''}">${p.cover?'':I.note}</div><b>${esc(p.name)}</b><span>${p.count} ${T.tracks}</span></button>`).join('')+'</div>';
 }
 async function showQueue(){
