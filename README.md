@@ -87,7 +87,7 @@ MPD reads it as a local file over a UNIX socket (no HTTP, no curl in the playbac
 and the panel pushes events instead of being polled. What remains is board tuning, not
 code.
 
-![Mobile](docs/panel-mobile.png)
+<img src="docs/panel-mobile.png" alt="Mobile" width="320">
 
 ## Server API
 
